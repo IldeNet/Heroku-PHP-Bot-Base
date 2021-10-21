@@ -39,7 +39,7 @@ $keyboard = array(
 
 if ( $text == '/start' ) 
 {
-	$message = "Este bot fue creado para ayudar a grupos de clash of clans, actualmente solo está disponible para uso privado por problemas de mantenimiento. Si necesitas contactar con el administrador o alguna mejora que aportar, contacte con @ildenet. \n\n This bot was created to support the Clash of clans\n
+	$message = "🙋🏼‍♂️ HOLA! Este bot fue creado para ayudar a grupos de clash of clans ⚔️, actualmente solo está disponible para uso privado por problemas de mantenimiento ⚙️. Si necesitas contactar con el administrador o alguna mejora que aportar, contacte con @ildenet. \n\n This bot was created to support the Clash of clans
 If you need to contact the administrator or any improvements you can make, contact @ildenet.";
 //	echo sendMessageWithKeyboard($chat_id,$message,$keyboard);
 	echo sendMessage($chat_id,$message);
@@ -59,7 +59,7 @@ if ( $text == 'Button 2' )
 */
 if (strpos($text,'bot') !== false) 
 {
-	$message = "El bot se encuentra actualmente en mantenimiento. ";
+	$message = "El bot 🤖 se encuentra actualmente en mantenimiento 🛠. Disculpe las molestias";
 	echo sendMessage($chat_id,$message);
 }
 ?>
