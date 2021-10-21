@@ -62,4 +62,23 @@ if (strpos($text,'bot') !== false)
 	$message = "El bot 🤖 se encuentra actualmente en mantenimiento 🛠. Disculpe las molestias";
 	echo sendMessage($chat_id,$message);
 }
+if(strpos($text,'/links') !== false)
+{
+if (strpos($text,'youtu.be') !== false){$links = str_replace("/links https://youtu.be/","", $text);}
+if (strpos($text,'www.youtube.com') !== false){$links = str_replace("/links https://www.youtube.com/watch?v=","", $text);}
+$i = 1;
+$videoid = $links;
+$apikey = 'AIzaSyCMXVS-BqDSoKD5W4UhKZ9OqXV2-CrhUWk'; // change this
+$json = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/videos?id=' . $videoid . '&key=' . $apikey . '&part=snippet'),true);
+$string = $json['items'][0]['snippet']['description'];
+preg_match_all('#CC[^%]++[\w\--;%]++#', $string, $match); // busca castillos del clan + aldeas
+if ($match[0] == false) {preg_match_all('#\bhttps?://link.clashofclans[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/))#', $string, $match);} // busca solo aldeas
+foreach ($match[0] as &$valor) {
+
+$texto = $i.". ".$valor."\n\n";
+$message .= $texto;
+$i++;
+}
+echo sendMessage($chat_id,$message);
+}
 ?>
