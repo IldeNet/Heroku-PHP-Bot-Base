@@ -34,7 +34,7 @@ function sendMessageWithKeyboard($chat_id,$text,$reply_markup)
     $result = file_get_contents($url);
   	return $result;
 }
-function sendPhoto($chat_id,$text)
+function sendPhoto($chat_id,$photo)
 {
 	global $token;
     $api    = "https://api.telegram.org/bot$token/";
@@ -80,7 +80,7 @@ if (strpos($msg,'bot') !== false)
 }
 if (strpos($msg,'foto') !== false) 
 {
-	$photo = fopen('./images/datos/aceleracion.png', 'r');
+	$photo = curl_file_create('/images/datos/aceleracion.png', 'image/png');
 	echo sendMessage($chat_id,$photo);
 }
 if(strpos($text,'/links') !== false)
