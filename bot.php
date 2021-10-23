@@ -39,7 +39,7 @@ function sendPhoto($chat_id,$photo)
 	global $token;
     $api    = "https://api.telegram.org/bot$token/";
     $method = "sendPhoto";
-    $params = "?chat_id=$chat_id&photo=" . urlencode($photo);
+    $params = "?chat_id=$chat_id&photo=" .$photo;
   
   	$url = $api . $method . $params;
     $result = file_get_contents($url);
