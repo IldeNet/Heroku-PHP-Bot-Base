@@ -39,7 +39,7 @@ function sendPhoto($chat_id,$photo)
 	global $token;
     $api    = "https://api.telegram.org/bot$token/";
     $method = "sendPhoto";
-    $params = "?chat_id=$chat_id&photo=" . urlencode($text);
+    $params = "?chat_id=$chat_id&photo=" . urlencode($photo);
   
   	$url = $api . $method . $params;
     $result = file_get_contents($url);
@@ -80,7 +80,7 @@ if (strpos($msg,'bot') !== false)
 }
 if (strpos($msg,'foto') !== false) 
 {
-	$photo = curl_file_create('/images/datos/aceleracion.png', 'image/png');
+	$photo = ('https://bot-telegram-php.herokuapp.com/images/datos/aceleracion.png');
 	echo sendMessage($chat_id,$photo);
 }
 if(strpos($text,'/links') !== false)
