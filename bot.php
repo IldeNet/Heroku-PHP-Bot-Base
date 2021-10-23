@@ -81,7 +81,7 @@ if (strpos($msg,'bot') !== false)
 if (strpos($msg,'foto') !== false) 
 {
 	$photo = 'https://bot-telegram-php.herokuapp.com/images/datos/aceleracion.png';
-	echo sendMessage($chat_id,$photo);
+	echo sendPhoto($chat_id,$photo);
 }
 if(strpos($text,'/links') !== false)
 {
