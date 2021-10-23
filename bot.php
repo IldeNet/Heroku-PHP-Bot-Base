@@ -616,10 +616,13 @@ $i++;
 }
 echo sendMessage($chat_id,$message);
 }
-
+// USO DE API DESHABILITADO POR IP DINAMICA
 // USANDO API CLASH OF CLANS
 if($msg == 'top')
 {
+$message = "Opción deshabilitada a uso público.";
+echo sendMessageHTML($chat_id,$message);
+/*
 $ch = curl_init();
         $headerArray = array (
             'Accept: application/json', $apisc
@@ -637,6 +640,7 @@ $ch = curl_init();
 		curl_close($ch);
 		$message = "<b>Los 10 mejores clanes de España:</b>\n".$data['items'][0]['rank']." -- ".$data['items'][0]['name']." -- ".$data['items'][0]['clanPoints']."\n".$data['items'][1]['rank']." -- ".$data['items'][1]['name']." -- ".$data['items'][1]['clanPoints']."\n".$data['items'][2]['rank']." -- ".$data['items'][2]['name']." -- ".$data['items'][2]['clanPoints']."\n".$data['items'][3]['rank']." -- ".$data['items'][3]['name']." -- ".$data['items'][3]['clanPoints']."\n".$data['items'][4]['rank']." -- ".$data['items'][4]['name']." -- ".$data['items'][4]['clanPoints']."\n".$data['items'][5]['rank']." -- ".$data['items'][5]['name']." -- ".$data['items'][5]['clanPoints']."\n".$data['items'][6]['rank']." -- ".$data['items'][6]['name']." -- ".$data['items'][6]['clanPoints']."\n".$data['items'][7]['rank']." -- ".$data['items'][7]['name']." -- ".$data['items'][7]['clanPoints']."\n".$data['items'][8]['rank']." -- ".$data['items'][8]['name']." -- ".$data['items'][8]['clanPoints']."\n".$data['items'][9]['rank']." -- ".$data['items'][9]['name']." -- ".$data['items'][9]['clanPoints']."\n";
 		echo sendMessageHTML($chat_id,$message);
+*/
 }
 // JUGADOR API
 if(strpos($text,'OpenPlayerProfile&tag=') !== false)
@@ -651,6 +655,9 @@ if(strpos($msg,'/jugador') !== false)
 $tag = str_replace("/jugador ","", $text);
         if($tag[0] === '#') $tag = urlencode($tag);
 		jugador:
+$message = "Opción deshabilitada a uso público.";
+echo sendMessageHTML($chat_id,$message);
+/****************************************
         $ch = curl_init();
         $headerArray = array (
             'Accept: application/json', $apisc
@@ -694,7 +701,9 @@ $tag = str_replace("/jugador ","", $text);
 				echo sendMessageHTML($chat_id,$message);
 				
 				
-}}}
+}}
+*/
+}
 // CLAN API 
 if(strpos($text,'OpenClanProfile&tag=') !== false)
 {
@@ -709,6 +718,9 @@ if(strpos($msg,'/clan') !== false)
 $tag = str_replace("/clan ","", $text);
     if($tag[0] === '#') $tag = urlencode($tag);
 clan:
+$message = "Opción deshabilitada a uso público.";
+echo sendMessageHTML($chat_id,$message);
+/***********************************************
 	$ch = curl_init();
         $headerArray = array (
             'Accept: application/json', $apisc
@@ -732,7 +744,9 @@ clan:
 		$message = "🔍 Nombre: ".$data["name"]."\n📜 Descripción: ".$data["description"]."\n📊 Nivel: ".$data["clanLevel"]."\n🏆 Trofeos: ".$data["clanPoints"]."\n🌎 Localización: ".$data["location"]["name"]."\n⭐️ Guerras ganadas: ".$data["warWins"]."\n🎉 Racha Victorias: ".$data ['warWinStreak']."\n🎖 Rango CWL: ".$CWL."\n⚔️ Miembros: ".$data ['members']."/50\n".$urlclan;
 		echo sendPhoto($chat_id,$photo);
 		echo sendMessageHTML($chat_id,$message);
-}}}
+}}
+
+}
 // BASES DE CLASHCHAMP
 if($msg == 'base th14' || $msg == 'base th13' || $msg == 'base th12' || $msg == 'base th11' || $msg == 'base th10' || $msg == 'base th9' || $msg == 'base th8')
 		{
