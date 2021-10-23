@@ -7,6 +7,8 @@ $var = file_get_contents("php://input");
 $var = json_decode($var,true);
 $chat_id = $var['message']['chat']['id'];
 $text = $var['message']['text'];
+$msg = strtolower($text);
+$msg = trim($msg);
 $token = "551082423:AAG9pkYJCW-4BctGLst4PtXLk2u9-GK8vPk"; 
 
 function sendMessage($chat_id,$text)
@@ -32,6 +34,18 @@ function sendMessageWithKeyboard($chat_id,$text,$reply_markup)
     $result = file_get_contents($url);
   	return $result;
 }
+function sendPhoto($chat_id,$text)
+{
+	global $token;
+    $api    = "https://api.telegram.org/bot$token/";
+    $method = "sendPhoto";
+    $params = "?chat_id=$chat_id&photo=" . urlencode($text);
+  
+  	$url = $api . $method . $params;
+    $result = file_get_contents($url);
+  	return $result;
+}
+
 
 $keyboard_button = array( ['Button 1','Button 2'] );
 $keyboard = array(
@@ -59,10 +73,15 @@ if ( $text == 'Button 2' )
 	sendMessage($chat_id,$message);
 }
 */
-if (strpos($text,'bot') !== false) 
+if (strpos($msg,'bot') !== false) 
 {
 	$message = "El bot 🤖 se encuentra actualmente en mantenimiento 🛠. Disculpe las molestias";
 	echo sendMessage($chat_id,$message);
+}
+if (strpos($msg,'foto') !== false) 
+{
+	$photo = fopen('./images/datos/aceleracion.png', 'r');
+	echo sendMessage($chat_id,$photo);
 }
 if(strpos($text,'/links') !== false)
 {
