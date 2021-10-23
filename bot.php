@@ -68,7 +68,7 @@ If you need to contact the administrator or any improvements you can make, conta
 }
 if ( $text == 'version' ) 
 {
-	$message = "Version 2.2 alojado en Heroku";
+	$message = "Version 2.3 alojado en Heroku";
 	echo sendMessage($chat_id,$message);
 }
 if (strpos($msg,'bot') !== false) 
@@ -745,7 +745,7 @@ echo sendMessageHTML($chat_id,$message);
 		echo sendPhoto($chat_id,$photo);
 		echo sendMessageHTML($chat_id,$message);
 }}
-
+*/
 }
 // BASES DE CLASHCHAMP
 if($msg == 'base th14' || $msg == 'base th13' || $msg == 'base th12' || $msg == 'base th11' || $msg == 'base th10' || $msg == 'base th9' || $msg == 'base th8')
