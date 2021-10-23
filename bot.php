@@ -12,7 +12,7 @@ $msg = strtolower($text);
 $msg = trim($msg);
 $token = "551082423:AAG9pkYJCW-4BctGLst4PtXLk2u9-GK8vPk"; 
 $urlweb = 'https://bot-telegram-php.herokuapp.com';
-$apisc = 'authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImRlYjc3YmI5LTRkNmYtNDc2MS05YWFjLTQyOGJhNDZhOWZkZiIsImlhdCI6MTYzNTAyNzg4OSwic3ViIjoiZGV2ZWxvcGVyLzQ5NzIyODY1LWEwMGMtYjU2ZC04NjhhLWZhYjUzZGMyNjgwNSIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjUyLjE4LjgwLjQ4Il0sInR5cGUiOiJjbGllbnQifV19.U4iJRH1W93L9FDO4kyqwo-eYpyh7VvUej1qKqBAxh1R9LiLr95chWTcGrzZ6TSkKlEhTXBGKKvK-oJleTSvgiw';
+$apisc = 'authorization: Bearer [TOKEN]';
 
 function sendMessage($chat_id,$text)
 {
@@ -603,7 +603,7 @@ if (strpos($text,'youtu.be') !== false){$links = str_replace("/links https://you
 if (strpos($text,'www.youtube.com') !== false){$links = str_replace("/links https://www.youtube.com/watch?v=","", $text);}
 $i = 1;
 $videoid = $links;
-$apikey = 'AIzaSyCMXVS-BqDSoKD5W4UhKZ9OqXV2-CrhUWk'; // change this
+$apikey = 'AIzaSyCMXVS-BqDSoKD5W4UhKZ9OqXV2-CrhUWk'; 
 $json = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/videos?id=' . $videoid . '&key=' . $apikey . '&part=snippet'),true);
 $string = $json['items'][0]['snippet']['description'];
 preg_match_all('#CC[^%]++[\w\--;%]++#', $string, $match); // busca castillos del clan + aldeas
@@ -620,7 +620,7 @@ echo sendMessage($chat_id,$message);
 // USANDO API CLASH OF CLANS
 if($msg == 'top')
 {
-$message = "Opción deshabilitada a uso público.";
+$message = "🤖 Opción deshabilitada a uso público.";
 echo sendMessageHTML($chat_id,$message);
 /*
 $ch = curl_init();
@@ -655,7 +655,7 @@ if(strpos($msg,'/jugador') !== false)
 $tag = str_replace("/jugador ","", $text);
         if($tag[0] === '#') $tag = urlencode($tag);
 		jugador:
-$message = "Opción deshabilitada a uso público.";
+$message = "🤖 Opción deshabilitada a uso público.";
 echo sendMessageHTML($chat_id,$message);
 /****************************************
         $ch = curl_init();
@@ -718,7 +718,7 @@ if(strpos($msg,'/clan') !== false)
 $tag = str_replace("/clan ","", $text);
     if($tag[0] === '#') $tag = urlencode($tag);
 clan:
-$message = "Opción deshabilitada a uso público.";
+$message = "🤖 Opción deshabilitada a uso público.";
 echo sendMessageHTML($chat_id,$message);
 /***********************************************
 	$ch = curl_init();
