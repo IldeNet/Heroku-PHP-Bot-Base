@@ -34,12 +34,12 @@ function sendMessageWithKeyboard($chat_id,$text,$reply_markup)
     $result = file_get_contents($url);
   	return $result;
 }
-function sendPhoto($chat_id,$photo)
+function sendPhoto($chat_id,$text)
 {
 	global $token;
     $api    = "https://api.telegram.org/bot$token/";
     $method = "sendPhoto";
-    $params = "?chat_id=$chat_id&photo=" .$photo;
+    $params = "?chat_id=$chat_id&photo=" .urlenconde($text);
   
   	$url = $api . $method . $params;
     $result = file_get_contents($url);
@@ -80,7 +80,7 @@ if (strpos($msg,'bot') !== false)
 }
 if (strpos($msg,'foto') !== false) 
 {
-	$photo = ('https://bot-telegram-php.herokuapp.com/images/datos/aceleracion.png');
+	$photo = ('./images/datos/aceleracion.png');
 	echo sendMessage($chat_id,$photo);
 }
 if(strpos($text,'/links') !== false)
