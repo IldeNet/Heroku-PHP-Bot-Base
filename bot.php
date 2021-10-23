@@ -68,7 +68,7 @@ If you need to contact the administrator or any improvements you can make, conta
 }
 if ( $text == 'version' ) 
 {
-	$message = "Version 2.1 alojado en Heroku";
+	$message = "Version 2.2 alojado en Heroku";
 	echo sendMessage($chat_id,$message);
 }
 if (strpos($msg,'bot') !== false) 
