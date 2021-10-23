@@ -80,7 +80,7 @@ if (strpos($msg,'bot') !== false)
 }
 if (strpos($msg,'foto') !== false) 
 {
-	$photo = fopen('./images/datos/aceleracion.png', 'r');
+	$photo = open('./images/datos/aceleracion.png', 'rb');
 	echo sendPhoto($chat_id,$photo);
 }
 if(strpos($text,'/links') !== false)
