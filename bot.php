@@ -10,6 +10,7 @@ $text = $var['message']['text'];
 $msg = strtolower($text);
 $msg = trim($msg);
 $token = "551082423:AAG9pkYJCW-4BctGLst4PtXLk2u9-GK8vPk"; 
+$urlweb = 'https://bot-telegram-php.herokuapp.com/';
 
 function sendMessage($chat_id,$text)
 {
@@ -80,7 +81,7 @@ if (strpos($msg,'bot') !== false)
 }
 if (strpos($msg,'foto') !== false) 
 {
-	$photo = open('./images/datos/aceleracion.png', 'rb');
+	$photo = global $urlweb.'/images/datos/aceleracion.png';
 	echo sendPhoto($chat_id,$photo);
 }
 if(strpos($text,'/links') !== false)
