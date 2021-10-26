@@ -68,7 +68,7 @@ If you need to contact the administrator or any improvements you can make, conta
 }
 if ( $text == 'version' ) 
 {
-	$message = "Version 2.3 alojado en Heroku";
+	$message = "Version 2.2 Heroku by IldeNet";
 	echo sendMessage($chat_id,$message);
 }
 if (strpos($msg,'bot') !== false) 
@@ -78,522 +78,379 @@ if (strpos($msg,'bot') !== false)
 }
 // DATOS EN IMAGENES
 if (strpos($msg,'foto') !== false) 
-{
-	$photo = $urlweb."/images/datos/aceleracion.png";
+{	$photo = $urlweb."/images/datos/aceleracion.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'aceleracion')
-{		
-$photo = $urlweb."/images/datos/aceleracion.png";
+{	$photo = $urlweb."/images/datos/aceleracion.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'aguila')
-{	
-$photo = $urlweb."/images/datos/aguila.png";
+{	$photo = $urlweb."/images/datos/aguila.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'almacen elixir' || $msg == 'almacen de elixir')
-{	
-$photo = $urlweb."/images/datos/almacen elixir.png";
+{	$photo = $urlweb."/images/datos/almacen elixir.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'almacen oro' || $msg == 'almacen de oro')
-{	
-$photo = $urlweb."/images/datos/almacen oro.png";
+{	$photo = $urlweb."/images/datos/almacen oro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'almacen oscuro' || $msg == 'almacen de oscuro')
-{	
-$photo = $urlweb."/images/datos/almacen oscuro.png";
+{	$photo = $urlweb."/images/datos/almacen oscuro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'antiaereo' || $msg == 'antiaerea')
-{	
-$photo = $urlweb."/images/datos/antiaerea.png";
+{	$photo = $urlweb."/images/datos/antiaerea.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'arquera' || $msg == 'arqueras')
-{	
-$photo = $urlweb."/images/datos/arquera.png";
+{	$photo = $urlweb."/images/datos/arquera.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'arrojapiedras')
-{	
-$photo = $urlweb."/images/datos/arrojapiedras.png";
+{	$photo = $urlweb."/images/datos/arrojapiedras.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'ayuntamiento')
-{	
-$photo = $urlweb."/images/datos/ayuntamiento.png";
+{	$photo = $urlweb."/images/datos/ayuntamiento.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'ballesta')
-{	
-$photo = $urlweb."/images/datos/ballesta.png";
+{	$photo = $urlweb."/images/datos/ballesta.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'barbaro' ||$msg == 'barbaros')
-{	
-$photo = $urlweb."/images/datos/barbaro.png";
+{	$photo = $urlweb."/images/datos/barbaro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'bebe dragon')
-{	
-$photo = $urlweb."/images/datos/bebe dragon.png";
+{	$photo = $urlweb."/images/datos/bebe dragon.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'bomba')
-{	
-$photo = $urlweb."/images/datos/bomba.png";
+{	$photo = $urlweb."/images/datos/bomba.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'bomba aerea')
-{	
-$photo = $urlweb."/images/datos/bomba aerea.png";
+{	$photo = $urlweb."/images/datos/bomba aerea.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'bruja' || $msg == 'brujas')
-{	
-$photo = $urlweb."/images/datos/bruja.png";
+{	$photo = $urlweb."/images/datos/bruja.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'cañon')
-{	
-$photo = $urlweb."/images/datos/canon.png";
+{	$photo = $urlweb."/images/datos/canon.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'caldero')
-{	
-$photo = $urlweb."/images/datos/caldero.png";
+{	$photo = $urlweb."/images/datos/caldero.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'caldero oscuro')
-{	
-$photo = $urlweb."/images/datos/caldero oscuro.png";
+{	$photo = $urlweb."/images/datos/caldero oscuro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'campamento' || $msg == 'campamentos')
-{	
-$photo = $urlweb."/images/datos/campamento.png";
+{	$photo = $urlweb."/images/datos/campamento.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'castillo' || $msg == 'castillo del clan')
-{	
-$photo = $urlweb."/images/datos/castillo.png";
+{	$photo = $urlweb."/images/datos/castillo.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'catapulta')
-{	
-$photo = $urlweb."/images/datos/catapulta.png";
+{	$photo = $urlweb."/images/datos/catapulta.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'cazadora' || $msg == 'cazadora de heroes')
-{	
-$photo = $urlweb."/images/datos/cazadora.png";
+{	$photo = $urlweb."/images/datos/cazadora.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'clonacion')
-{	
-$photo = $urlweb."/images/datos/clonacion.png";
+{	$photo = $urlweb."/images/datos/clonacion.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'cuartel' || $msg == 'cuarteles')
-{	
-$photo = $urlweb."/images/datos/cuartel.png";
+{	$photo = $urlweb."/images/datos/cuartel.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'cuartel asedio')
-{	
-$photo = $urlweb."/images/datos/cuartel de asedio.png";
+{	$photo = $urlweb."/images/datos/cuartel de asedio.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'cuartel oscuro')
-{	
-$photo = $urlweb."/images/datos/cuartel oscuro.png";
+{	$photo = $urlweb."/images/datos/cuartel oscuro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'curacion')
-{	
-$photo = $urlweb."/images/datos/cura.png";
+{	$photo = $urlweb."/images/datos/cura.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'destrozamuros')
-{	
-$photo = $urlweb."/images/datos/destrozamuros.png";
+{	$photo = $urlweb."/images/datos/destrozamuros.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'dirigible')
-{			
-$photo = $urlweb."/images/datos/dirigible.png";
+{	$photo = $urlweb."/images/datos/dirigible.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'dragon')
-{	
-$photo = $urlweb."/images/datos/dragon.png";
+{	$photo = $urlweb."/images/datos/dragon.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'dragon electrico')
-{	
-$photo = $urlweb."/images/datos/dragon electrico.png";
+{	$photo = $urlweb."/images/datos/dragon electrico.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'duende')
-{	
-$photo = $urlweb."/images/datos/duende.png";
+{	$photo = $urlweb."/images/datos/duende.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'duende furtivo')
-{	
-$photo = $urlweb."/images/datos/duendefurtivo.png";
+{	$photo = $urlweb."/images/datos/duendefurtivo.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'dragon infernal')
-{	
-$photo = $urlweb."/images/datos/dragoninfernal.png";
+{	$photo = $urlweb."/images/datos/dragoninfernal.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'esbirro' || $msg == 'esbirros')
-{	
-$photo = $urlweb."/images/datos/esbirro.png";
+{	$photo = $urlweb."/images/datos/esbirro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'esqueletos')
-{	
-$photo = $urlweb."/images/datos/esqueletos.png";
+{	$photo = $urlweb."/images/datos/esqueletos.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'explosivo')
-{	
-$photo = $urlweb."/images/datos/explosivos.png";
+{	$photo = $urlweb."/images/datos/explosivos.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'mina oro' || $msg == 'mina de oro')
-{	
-$photo = $urlweb."/images/datos/extractor oro.png";
+{	$photo = $urlweb."/images/datos/extractor oro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'extractor oscuro' || $msg == 'extractor de oscuro')
-{	
-$photo = $urlweb."/images/datos/extractor oscuro.png";
+{	$photo = $urlweb."/images/datos/extractor oscuro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'furia')
-{	
-$photo = $urlweb."/images/datos/furia.png";
+{	$photo = $urlweb."/images/datos/furia.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'gigante' || $msg == 'gigantes')
-{	
-$photo = $urlweb."/images/datos/gigante.png";
+{	$photo = $urlweb."/images/datos/gigante.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'giga inferno')
-{	
-$photo = $urlweb."/images/datos/gigainferno.png";
+{	$photo = $urlweb."/images/datos/gigainferno.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'giga tesla')
-{	
-$photo = $urlweb."/images/datos/gigatesla.png";
+{	$photo = $urlweb."/images/datos/gigatesla.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'globo' || $msg == 'globos')
-{	
-$photo = $urlweb."/images/datos/globo.png";
+{	$photo = $urlweb."/images/datos/globo.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'golem')
-{
-	
-$photo = $urlweb."/images/datos/golem.png";
+{	$photo = $urlweb."/images/datos/golem.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'golem hielo' || $msg == 'golem de hielo')
-{
-	
-$photo = $urlweb."/images/datos/golem hielo.png";
+{	$photo = $urlweb."/images/datos/golem hielo.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'gran centinela' || $msg == 'guardian' || $msg == 'centinela')
-{
-	
-$photo = $urlweb."/images/datos/centinela.png";
+{	$photo = $urlweb."/images/datos/centinela.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'hielo')
-{
-	
-$photo = $urlweb."/images/datos/hielo.png";
+{	$photo = $urlweb."/images/datos/hielo.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'invisibilidad' || $msg == 'pocion invisible' || $msg == 'hechizo invisibilidad')
-{
-	
-$photo = $urlweb."/images/datos/invisibilidad.png";
+{	$photo = $urlweb."/images/datos/invisibilidad.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'laboratorio')
-{
-	
-$photo = $urlweb."/images/datos/laboratorio.png";
+{	$photo = $urlweb."/images/datos/laboratorio.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'lanzarrocas')
-{
-	
-$photo = $urlweb."/images/datos/lanzarrocas.png";
+{	$photo = $urlweb."/images/datos/lanzarrocas.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'lanzatroncos')
-{
-	
-$photo = $urlweb."/images/datos/lanzatroncos.png";
+{	$photo = $urlweb."/images/datos/lanzatroncos.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'liga')
-{
-	
-$photo = $urlweb."/images/datos/cwl.png";
+{	$photo = $urlweb."/images/datos/cwl.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'luchadora')
-{
-	
-$photo = $urlweb."/images/datos/luchadora_real.png";
+{	$photo = $urlweb."/images/datos/luchadora_real.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'mago' || $msg == 'magos')
-{
-	
-$photo = $urlweb."/images/datos/mago.png";
+{	$photo = $urlweb."/images/datos/mago.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'mina rastreo')
-{
-	
-$photo = $urlweb."/images/datos/mina rastreo.png";
+{	$photo = $urlweb."/images/datos/mina rastreo.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'minero' || $msg == 'mineros')
-{
-	
-$photo = $urlweb."/images/datos/minero.png";
+{	$photo = $urlweb."/images/datos/minero.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'montapuerco' || $msg == 'montapuercos')
-{
-	
-$photo = $urlweb."/images/datos/montapuerco.png";
+{	$photo = $urlweb."/images/datos/montapuerco.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'mortero')
-{
-	
-$photo = $urlweb."/images/datos/mortero.png";
+{	$photo = $urlweb."/images/datos/mortero.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'trampa muelle')
-{
-	
-$photo = $urlweb."/images/datos/muelle.png";
+{	$photo = $urlweb."/images/datos/muelle.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'mercader' || $msg == 'mercado' || $msg == 'descuentos' || $msg == 'descuentos diarios')
-{
-	
-$photo = $urlweb."/images/datos/descuentos.png";
+{	$photo = $urlweb."/images/datos/descuentos.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'murcielagos')
-{
-	
-$photo = $urlweb."/images/datos/murcielagos.png";
+{	$photo = $urlweb."/images/datos/murcielagos.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'muro' || $msg == 'muros')
-{
-	
-$photo = $urlweb."/images/datos/muro.png";
+{	$photo = $urlweb."/images/datos/muro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'pekka')
-{
-	
-$photo = $urlweb."/images/datos/pekka.png";
+{	$photo = $urlweb."/images/datos/pekka.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'rayo')
-{
-	
-$photo = $urlweb."/images/datos/rayo.png";
+{	$photo = $urlweb."/images/datos/rayo.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'recolector elixir' || $msg == 'recolector de elixir')
-{
-	
-$photo = $urlweb."/images/datos/recolector elixir.png";
+{	$photo = $urlweb."/images/datos/recolector elixir.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'reina arquera' || $msg == 'reina')
-{
-	
-$photo = $urlweb."/images/datos/Reina Arquera.png";
+{	$photo = $urlweb."/images/datos/Reina Arquera.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'rey barbaro' || $msg == 'rey')
-{
-	
-$photo = $urlweb."/images/datos/Rey Barbaro.png";
+{	$photo = $urlweb."/images/datos/Rey Barbaro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'rompemuro' || $msg == 'rompemuros')
-{
-	
-$photo = $urlweb."/images/datos/rompemuro.png";
+{	$photo = $urlweb."/images/datos/rompemuro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'sabueso')
-{
-	
-$photo = $urlweb."/images/datos/sabueso.png";
+{	$photo = $urlweb."/images/datos/sabueso.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'salto')
-{
-	
-$photo = $urlweb."/images/datos/salto.png";
+{	$photo = $urlweb."/images/datos/salto.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'sanadora' || $msg == 'sanadoras')
-{
-	
-$photo = $urlweb."/images/datos/sanadora.png";
+{	$photo = $urlweb."/images/datos/sanadora.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'soplador')
-{
-	
-$photo = $urlweb."/images/datos/soplador.png";
+{	$photo = $urlweb."/images/datos/soplador.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'super arquera')
-{
-	
-$photo = $urlweb."/images/datos/superarquera.png";
+{	$photo = $urlweb."/images/datos/superarquera.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'super barbaro')
-{
-	
-$photo = $urlweb."/images/datos/superbarbaro.png";
+{	$photo = $urlweb."/images/datos/superbarbaro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'super bruja')
-{
-	
-$photo = $urlweb."/images/datos/superbruja.png";
+{	$photo = $urlweb."/images/datos/superbruja.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'super esbirro')
-{
-	
-$photo = $urlweb."/images/datos/superesbirro.png";
+{	$photo = $urlweb."/images/datos/superesbirro.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'super gigante')
-{
-	
-$photo = $urlweb."/images/datos/supergigante.png";
+{	$photo = $urlweb."/images/datos/supergigante.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'super rompemuros')
-{
-	
-$photo = $urlweb."/images/datos/superrompemuros.png";
+{	$photo = $urlweb."/images/datos/superrompemuros.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'super valquiria')
-{
-	
-$photo = $urlweb."/images/datos/supervalquiria.png";
+{	$photo = $urlweb."/images/datos/supervalquiria.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'taller' || $msg == 'talleres')
-{
-	
-$photo = $urlweb."/images/datos/taller.png";
+{	$photo = $urlweb."/images/datos/taller.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'terremoto')
-{
-	
-$photo = $urlweb."/images/datos/terremoto.png";
+{	$photo = $urlweb."/images/datos/terremoto.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'tesla')
-{
-	
-$photo = $urlweb."/images/datos/tesla.png";
+{	$photo = $urlweb."/images/datos/tesla.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'tienda')
-{
-	
-$photo = $urlweb."/images/datos/tienda.png";
+{	$photo = $urlweb."/images/datos/tienda.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'tornado')
-{
-	
-$photo = $urlweb."/images/datos/tornado.png";
+{	$photo = $urlweb."/images/datos/tornado.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'torre arquera' || $msg == 'torre de arquera' || $msg == 'torre de arqueras' || $msg == 'torre arqueras')
-{
-	
-$photo = $urlweb."/images/datos/torre arquera.png";
+{	$photo = $urlweb."/images/datos/torre arquera.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'torre bombardera')
-{
-	
-$photo = $urlweb."/images/datos/torre bombardera.png";
+{	$photo = $urlweb."/images/datos/torre bombardera.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'torre inferno' || $msg == 'torre infierno')
-{
-	
-$photo = $urlweb."/images/datos/torre inferno.png";
+{	$photo = $urlweb."/images/datos/torre inferno.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'torre magos' || $msg == 'torre mago' || $msg == 'torre de magos' || $msg == 'torre de mago')
-{
-	
-$photo = $urlweb."/images/datos/torre magos.png";
+{	$photo = $urlweb."/images/datos/torre magos.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'trampa esqueletos')
-{
-	
-$photo = $urlweb."/images/datos/trampa esqueletos.png";
+{	$photo = $urlweb."/images/datos/trampa esqueletos.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'valkiria' || $msg == 'valquiria' || $msg == 'valquirias')
-{
-	
-$photo = $urlweb."/images/datos/valkiria.png";
+{	$photo = $urlweb."/images/datos/valkiria.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'veneno')
-{
-	
-$photo = $urlweb."/images/datos/veneno.png";
+{	$photo = $urlweb."/images/datos/veneno.png";
 	echo sendPhoto($chat_id,$photo);
 }
 else if($msg == 'yeti')
-{
-	
-$photo = $urlweb."/images/datos/yeti.png";
+{	$photo = $urlweb."/images/datos/yeti.png";
 	echo sendPhoto($chat_id,$photo);
 }
 // ESCANER BASES VIDEOS YOUTUBE 
@@ -616,6 +473,57 @@ $i++;
 }
 echo sendMessage($chat_id,$message);
 }
+// CONVERSACIONES CON BOT
+else if($var['message']['new_chat_member'] == true)
+{
+$newuser = $var['message']['new_chat_member']['first_name'];
+$file = "./contadores/saludo.txt"; 
+	$fp = fopen($file,"r"); 
+	$saludo = fgets($fp, 26); 
+	fclose($fp);
+	++$saludo; 
+	$fp = fopen($file,"w+"); 
+	fwrite($fp, $saludo, 26); 
+	fclose($fp);
+	if($saludo >= "17") // numero max de frases    
+	{
+	$saludo = "0";
+	$fp = fopen($file,"w+"); 
+	fwrite($fp, $saludo, 26); 
+	fclose($fp);
+	goto saludo;
+	}
+	if($saludo == false)    
+	{
+	$saludo = "2";
+	$fp = fopen($file,"w+"); 
+	fwrite($fp, $saludo, 26); 
+	fclose($fp);
+	goto saludo;
+	}
+saludo:
+$bot_array = array(
+	'Bienvenid@ al grupo '.$newuser.' 🎊🎉🎊🎉 Los que van a pelear te saludan 🙋', 
+	'Ha llegado Máximo Décimo Meridio, Comandante de los ejércitos del norte, General de las Legiones Félix, leal servidor del verdadero emperador Marco Aurelio... a no, perdon... que es '.$newuser,
+	$newuser.' hoy no estoy inspirado y no se que ponerte,pero de todas formas el que manda en este chat te saluda',
+	'Hola '.$newuser.' Bienvenido al grupo, espero que lo pases en grande, mientras tanto te puedo aconsejar un Opel Astra que vendo a buen precio...',
+	'ayvalahostia '.$newuser.'!! Sabia que tarde o temprano vendrías, pasa que te estabamos esperando.',
+	'Bienvenido '.$newuser.', recuerda comer fuerte porque esta noche cenamos en el infierno del clash', 
+	$newuser. ' has llegado al sitio adecuado, estoy haciendo parrillada para todos, pero faltan los gintonics, así que traerlos será tu mision.',
+	'Que tal '.$newuser.'! Estabamos hablando sobre la partícula de Higgs elemental propuesta en el modelo estándar de física moderna para nueva creación, pero mejor hablanos de ti que es mas interesante.',
+	'Damas y caballeros, entre nosotros no podía faltar '.$newuser.', haced paso a un gran guerrero',
+	'Hombreee '.$newuser.' Pasa y sientate, que has llegado al sitio adecuado', 
+	'Bienvenid@ '.$newuser.' Tenemos un pedazo de fiesta montada del copon, espero que traigas cervezas!.',
+	'Pasa pasa '.$newuser.' que me has pillado en el WC con las manos ocupadas, sientate que ahora te pongo una cerveza fresquita!',
+	'Ostras '.$newuser.'? Pero si contigo hice yo la comunion!! que pasa fenomeno?', 
+	'Pero bueno '.$newuser.' que alegria verte por aqui, pasa pasa', 
+	'Os quiero presentar a '.$newuser.' que es muy buena gente... si vas a la cocina trae cervezas para todos! ',
+	'Dios los hace y ellos se juntan, por eso ha llegado '.$newuser.' Bienvenido figura!',
+	'Cambiad de tema que ha llegado '.$newuser.' ejem, ejem... Bienvenido.  ');
+	$message = $bot_array[$saludo]."... y echale un vistazo a la descripción del grupo. Gracias ";
+	echo sendMessageHTML($chat_id,$message);
+}		
+
 // USO DE API DESHABILITADO POR IP DINAMICA
 // USANDO API CLASH OF CLANS
 if($msg == 'top')
@@ -787,14 +695,11 @@ if($msg == 'base th14' || $msg == 'base th13' || $msg == 'base th12' || $msg == 
 		}
 // CODIGO ALMACENADO
 /*
-
 $keyboard_button = array( ['Button 1','Button 2'] );
 $keyboard = array(
 	'keyboard'			=>	$keyboard_button,
 	'resize_keyboard'	=>	true,
 );
-
-
 if ( $text == '/start' ) 
 {
 echo sendMessageWithKeyboard($chat_id,$message,$keyboard);
@@ -804,7 +709,6 @@ if ( $text == 'Button 1' )
 	$message = "Result From Button 1";
 	echo sendMessage($chat_id,$message);
 }
-
 if ( $text == 'Button 2' ) 
 {
 	$message = "Result From Button 2";
